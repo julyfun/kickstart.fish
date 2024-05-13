@@ -3,3 +3,6 @@ function printtime --on-event fish_postexec
     echo \t\($duration\)
 end
 
+# Use ctrl + o to `cd ..`
+bind \co 'cd ..; commandline -f repaint'
+
